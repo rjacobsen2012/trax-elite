@@ -11,6 +11,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
         <!-- Scripts -->
         @routes
