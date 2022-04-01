@@ -1,0 +1,45 @@
+/* common table */
+div.autoscroller {
+    @apply max-w-full overflow-auto;
+}
+
+table.common {
+    @apply table-auto border-collapse w-full border border-slate-300 border-r-0 border-l-0;
+}
+
+table.common th {
+    @apply text-xs shadow-sm bg-cyan-500 font-light;
+}
+
+table.common th,
+table.common td {
+    @apply border border-slate-200 p-1 border-r-0 border-l-0;
+}
+
+table.common td:not(:nth-child(2)) {
+    @apply text-center;
+}
+
+table.common tr:hover {
+    @apply bg-slate-200;
+}
+
+table.common tr.cursor {
+    @apply cursor-pointer;
+}
+
+.select,
+.input {
+    @apply border
+    border-gray-300
+    focus:border-indigo-300
+    focus:ring
+    focus:ring-indigo-200
+    focus:ring-opacity-50
+    rounded-md
+    shadow-sm
+    pl-2
+    bg-gray-50
+    w-full
+    py-2;
+}

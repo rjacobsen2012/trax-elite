@@ -1,0 +1,81 @@
+.select,
+.input {
+    @apply border
+    border-gray-300
+    focus:border-indigo-300
+    focus:ring
+    focus:ring-indigo-200
+    focus:ring-opacity-50
+    rounded-md
+    shadow-sm
+    pl-2
+    bg-gray-50
+    w-full
+    py-2;
+}
+
+.form-custom:not(.attach-button) {
+    @apply col-span-6;
+}
+
+.form-custom .select,
+.form-custom .input,
+.search .input {
+    @apply rounded-r-md
+    rounded-l-none
+    border-l-0;
+}
+
+.form-custom .input-date-time {
+    @apply focus:border-indigo-300
+    focus:ring
+    focus:ring-indigo-200
+    focus:ring-opacity-50
+    bg-gray-50
+    w-full;
+}
+.form-custom .input-date-time .dp__input {
+    @apply py-2 border-l-0 rounded-r-md
+    rounded-l-none border
+    border-gray-300;
+}
+
+.form-custom .select,
+.search .input {
+    @apply w-full;
+}
+
+.form-custom .form-label {
+    @apply flex-none
+    text-right
+    bg-slate-200
+    border
+    border-r-0
+    border-slate-300
+    rounded-l
+    p-2
+    text-xs
+    whitespace-nowrap
+    shadow-sm
+    w-48
+    text-slate-700
+    justify-items-end;
+}
+.form-custom .form-label span {
+    @apply inline-block my-1;
+}
+.search .form-label {
+    @apply basis-6 px-4 py-3;
+}
+
+.form-label.custom {
+    line-height: 2.6em;
+}
+
+.form-custom.attach-button input {
+    @apply rounded-r-none;
+}
+
+.form-custom.attach-button button {
+    @apply rounded-l-none;
+}
